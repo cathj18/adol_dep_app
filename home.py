@@ -16,7 +16,7 @@ q3 = st.radio(
 )
 
 q4 = st.number_input(
-  "4) During the past 12 months, how many times have you visited a doctor, nurse, physician assistant or nurse practitioner about your own health at a doctor’s office, a clinic, or some other place?",
+  "4 During the past 12 months, how many times have you visited a doctor, nurse, physician assistant or nurse practitioner about your own health at a doctor’s office, a clinic, or some other place?",
   min_value = 0
 )
 
