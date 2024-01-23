@@ -115,7 +115,7 @@ trt8 = st.radio(
 )
 
 trt9 = st.radio(
-  "At any time during the past 12 months, that is since [DATEFILL], did you attend a school for students with emotional or behavioral problems?",
+  "At any time during the past 12 months, did you attend a school for students with emotional or behavioral problems?",
   options = ['Yes', 'No']
 )
 
@@ -137,6 +137,6 @@ legal2 = st.radio(
 )
 
 legal3 = st.radio(
-  "During the past 12 months, that is, since [DATEFILL], did you stay overnight or longer in any type of juvenile detention center, sometimes called \"juvie\", prison, or jail?",
+  "During the past 12 months, did you stay overnight or longer in any type of juvenile detention center, sometimes called \"juvie\", prison, or jail?",
   options = ['Yes', 'No']
 )
