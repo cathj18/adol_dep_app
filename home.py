@@ -5,9 +5,8 @@ st.set_page_config("Survey Screening", page_icon="📝")
 
 st.title("Screening for Adolescent Depression 📝")
 
-st.text("Q1: How old are you?")
 q1 = st.number_input(
-  "", min_value = 12, max_value = 17
+  "Q1: How old are you?", min_value = 12, max_value = 17
 )
 
 q2 = st.number_input(
