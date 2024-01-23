@@ -48,6 +48,6 @@ legal2 = st.radio(
 )
 
 legal3 = st.radio(
-  "During the past 12 months, that is, since [DATEFILL], did you stay overnight or longer in any type of juvenile detention center, sometimes called "juvie", prison, or jail?",
+  "During the past 12 months, that is, since [DATEFILL], did you stay overnight or longer in any type of juvenile detention center, sometimes called \"juvie\", prison, or jail?",
   options = ['Yes', 'No']
 )
