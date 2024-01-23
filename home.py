@@ -185,6 +185,40 @@ hh6 = st.radio(
   options = frequency
 )
 
+hh7 = st.radio(
+  "During the past 12 months, how often did your parents limit the amount of time you went out with friends on school nights?",
+  options = frequency
+)
+
+hh8 = st.radio(
+  "During the past 12 months, how often did your parents tell you they were proud of you for something you had done?",
+  options = frequency
+)
+
+hh9 = st.radio(
+  "During the past 12 months, how many times have you argued or had a fight with at least one of your parents?",
+  options = frequency
+)
+
+st.subheader("Religion", divider="grey")
+
+disagr = ["Strongly Disagree", "Disagree", "Strongly Agree", "Agree"]
+
+relig1 = st.radio(
+  "Your religious beliefs are a very important part of your life.",
+  options = disagr
+)
+
+relig2 = st.radio(
+  "Your religious beliefs influence how you make decisions in your life.",
+  options = disagr
+)
+
+relig3 = st.radio(
+  "It is important that your friends share your religious beliefs.",
+  options = disagr
+)
+
 st.subheader("Legal History", divider="blue")
 
 legal1 = st.radio(
