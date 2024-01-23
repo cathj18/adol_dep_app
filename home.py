@@ -72,6 +72,58 @@ act4 = st.radio(
   options = ["0", "1", "2", "3 or more"]
 )
 
+st.subheader("Treatment", divider="green")
+
+trt1 = st.radio(
+  "During the past 12 months, did you stay overnight or longer in a residential treatment center to receive treatment or counseling for emotional or behavioral problems that were not caused by alcohol or drugs?",
+  options = ['Yes', 'No']
+)
+
+trt2 = st.radio(
+  "During the past 12 months, did you stay overnight or longer in foster care or in a therapeutic foster care home because you had emotional or behavioral problems that were not caused by alcohol or drugs?",
+  options = ['Yes', 'No']
+)
+
+trt3 = st.radio(
+  "During the past 12 months, did you receive treatment or counseling at a partial day hospital or day treatment program because you had problems with your behavior or emotions that were not caused by alcohol or drugs?",
+  options = ['Yes', 'No']
+)
+
+trt4 = st.radio(
+  "During the past 12 months, did you receive treatment or counseling at a mental health clinic or center because you had problems with your behavior or emotions that were not caused by alcohol or drugs?",
+  options = ['Yes', 'No']
+)
+
+trt5 = st.radio(
+  "During the past 12 months, did you receive treatment or counseling from a private therapist, psychologist, psychiatrist, social worker, or counselor for emotional or behavioral problems that were not caused by alcohol or drugs?",
+  options = ['Yes', 'No']
+)
+
+trt6 = st.radio(
+  "During the past 12 months, did you receive treatment or counseling from an in-home therapist, counselor, or family preservation worker for emotional or behavioral problems that were not caused by alcohol or drugs?",
+  options = ['Yes', 'No']
+)
+
+trt7 = st.radio(
+  "During the past 12 months, did you receive treatment or counseling from a pediatrician or other family doctor for emotional or behavioral problems that were not caused by alcohol or drugs?",
+  options = ['Yes', 'No']
+)
+
+trt8 = st.radio(
+  "During the past 12 months, did you receive any treatment or counseling from a school social worker, a school psychologist, or a school counselor for emotional or behavioral problems that were not caused by alcohol or drugs?",
+  options = ['Yes', 'No']
+)
+
+trt9 = st.radio(
+  "At any time during the past 12 months, that is since [DATEFILL], did you attend a school for students with emotional or behavioral problems?",
+  options = ['Yes', 'No']
+)
+
+trt10 = st.radio(
+  "At any time during the past 12 months, did you participate in a school program that was just for students with emotional or behavioral problems?",
+  options = ['Yes', 'No']
+)
+
 st.subheader("Legal History", divider="blue")
 
 legal1 = st.radio(
