@@ -4,6 +4,7 @@ import numpy as np
 st.set_page_config("Survey Screening", page_icon="📝")
 
 st.title("Screening for Adolescent Depression 📝")
+
 q1 = st.number_input(
   "Q1: How old are you?", min_value = 12, max_value = 17
 )
@@ -22,9 +23,31 @@ q4 = st.number_input(
   min_value = 0
 )
 
-st.header("Educational History")
+st.header("Education")
+
+edu1 = st.radio(
+  "Which of the statements below best describes how you felt overall about going to school during the past 12 months?",
+  options = ['Yes', '1 - You liked going to school a lot']
+)
 
 q5 = st.radio(
   "Q5: Have you attended any type of school at any time during the past 12 months?",
+  options = ['Yes', 'No']
+)
+
+st.subheader("Legal History", divider="blue")
+
+legal1 = st.radio(
+  "Not counting minor traffic violations, have you ever been arrested and booked for breaking the law?",
+  options = ['Yes', 'No']
+)
+
+legal2 = st.radio(
+  "Were you on probation at any time during the past 12 months?",
+  options = ['Yes', 'No']
+)
+
+legal3 = st.radio(
+  "During the past 12 months, that is, since [DATEFILL], did you stay overnight or longer in any type of juvenile detention center, sometimes called "juvie", prison, or jail?",
   options = ['Yes', 'No']
 )
