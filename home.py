@@ -23,11 +23,26 @@ q4 = st.number_input(
   min_value = 0
 )
 
-st.header("Education")
+st.subheader("Education", divider="green")
 
 edu1 = st.radio(
   "Which of the statements below best describes how you felt overall about going to school during the past 12 months?",
-  options = ['Yes', '1 - You liked going to school a lot']
+  options = ["You liked going to school a lot", "You kind of liked going to school", "You didn t like going to school very much", "You hated going to school"]
+)
+
+edu2 = st.radio(
+  "During the past 12 months, how often did you feel that the school work you were assigned to do was meaningful and important?",
+  options = ["Always", "Sometimes", "Seldom", "Never"]
+)
+
+edu3 = st.radio(
+  "How important do you think the things you have learned in school during the past 12 months are going to be to you later in life?",
+  options = ["Very important", "Somewhat important", "Somewhat unimportant", "Very unimportant"]
+)
+
+edu4 = st.radio(
+  "How interesting do you think most of your courses at school during the past 12 months have been?",
+  options = ["Very interesting", "Somewhat interesting", "Somewhat boring", "Very boring"]
 )
 
 q5 = st.radio(
