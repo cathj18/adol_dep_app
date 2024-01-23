@@ -151,7 +151,7 @@ diff5 = st.radio(
   options = ['Yes', 'No']
 )
 
-st.subheader("Household", divider="yellow")
+st.subheader("Household", divider="violet")
 
 hh1 = st.radio(
   "Do you have a mother in your household?",
