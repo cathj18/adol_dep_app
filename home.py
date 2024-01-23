@@ -124,6 +124,67 @@ trt10 = st.radio(
   options = ['Yes', 'No']
 )
 
+st.subheader("Difficulties", divider="orange")
+
+diff1 = st.radio(
+  "Are you deaf or do you have serious difficulty hearing?",
+  options = ['Yes', 'No']
+)
+
+diff2 = st.radio(
+  "Are you blind or do you have serious difficulty seeing, even when wearing glasses?",
+  options = ['Yes', 'No']
+)
+
+diff3 = st.radio(
+  "Because of a physical, mental or emotional condition, do you have serious difficulty concentrating, remembering, or making decisions?",
+  options = ['Yes', 'No']
+)
+
+diff4 = st.radio(
+  "Do you have serious difficulty walking or climbing stairs?",
+  options = ['Yes', 'No']
+)
+
+diff5 = st.radio(
+  "Do you have difficulty dressing or bathing?",
+  options = ['Yes', 'No']
+)
+
+st.subheader("Household", divider="yellow")
+
+hh1 = st.radio(
+  "Do you have a mother in your household?",
+  options = ["Yes", "No", "I don't know"]
+)
+
+hh2 = st.radio(
+  "Do you have a father in your household?",
+  options = ["Yes", "No", "I don't know"]
+)
+
+frequency = ["Always", "Sometimes", "Seldom", "Never"]
+
+hh3 = st.radio(
+  "During the past 12 months, how often did your parents check on whether you had done your homework?",
+  options = frequency
+)
+
+hh4 = st.radio(
+  "During the past 12 months, how often did your parents make you do chores around the house?",
+  options = frequency
+)
+
+hh5 = st.radio(
+  "During the past 12 months, how often did your parents limit the amount of time you watched TV?",
+  options = frequency
+)
+
+hh6 = st.radio(
+  "During the past 12 months, how often did your parents limit the amount of time you went out with friends on school nights?",
+  options = frequency
+)
+
 st.subheader("Legal History", divider="blue")
 
 legal1 = st.radio(
