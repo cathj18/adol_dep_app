@@ -50,6 +50,28 @@ q5 = st.radio(
   options = ['Yes', 'No']
 )
 
+st.subheader("Activities", divider="blue")
+
+act1 = st.radio(
+  "During the past 12 months, in how many different kinds of school-based activities, such as team sports, cheerleading, choir, band, student government, or clubs, have you participated?",
+  options = ["0", "1", "2", "3 or more"]
+)
+
+act2 = st.radio(
+  "During the past 12 months, in how many different kinds of community-based activities, such as volunteer activities, sports, clubs, or groups have you participated?",
+   options = ["0", "1", "2", "3 or more"]
+)
+
+act3 = st.radio(
+  "During the past 12 months, in how many different kinds of church or faith-based activities, such as clubs, youth groups, Saturday or Sunday school, prayer groups, youth trips, service or volunteer activities have you participated?",
+  options = ["0", "1", "2", "3 or more"]
+)
+
+act4 = st.radio(
+  "During the past 12 months, in how many different kinds of other activities, such as dance lessons, piano lessons, karate lessons, or horseback riding lessons, have you participated?",
+  options = ["0", "1", "2", "3 or more"]
+)
+
 st.subheader("Legal History", divider="blue")
 
 legal1 = st.radio(
