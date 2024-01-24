@@ -9,21 +9,7 @@ yn = ['Yes', 'No']
 frequency = ["Always", "Sometimes", "Seldom", "Never"]
 
 q1 = st.number_input(
-  "Q1: How old are you?", min_value = 12, max_value = 17
-)
-
-q2 = st.number_input(
-  "Q2: During the past 12 months, how many different times have you been treated in an emergency room for any reason?", min_value = 0
-)
-
-q3 = st.radio(
-  "Q3: During the past 12 months, have you stayed overnight or longer as an inpatient in a hospital?",
-  options = ['Yes', 'No']
-)
-
-q4 = st.number_input(
-  "Q4: During the past 12 months, how many times have you visited a doctor, nurse, physician assistant or nurse practitioner about your own health at a doctor’s office, a clinic, or some other place?",
-  min_value = 0
+  "How old are you?", min_value = 12, max_value = 17
 )
 
 st.subheader("Education", divider="green")
@@ -75,12 +61,28 @@ prog2 = st.radio(
   options = yn
 )
 
-st.subheader("Life", divider="blue")
+st.subheader("Health", divider="blue")
 
-life1 = st.radio(
+health0 = st.radio(
   "Would you say your health in general is excellent, very good, good, fair, or poor?",
   options = ['Excellent', 'Very good', 'Good', 'Fair', 'Poor']
 )
+
+health1 = st.number_input(
+  "During the past 12 months, how many different times have you been treated in an emergency room for any reason?", min_value = 0
+)
+
+health2 = st.radio(
+  "During the past 12 months, have you stayed overnight or longer as an inpatient in a hospital?",
+  options = ['Yes', 'No']
+)
+
+health3 = st.number_input(
+  "During the past 12 months, how many times have you visited a doctor, nurse, physician assistant or nurse practitioner about your own health at a doctor’s office, a clinic, or some other place?",
+  min_value = 0
+)
+
+st.subheader("Life", divider="blue")
 
 life2 = st.radio(
   "How many times in the past 12 months have you moved? Please include moves from one residence to another within the same city/town as well as those from one city/town to another.",
