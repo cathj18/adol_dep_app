@@ -12,6 +12,16 @@ q1 = st.number_input(
   "How old are you?", min_value = 12, max_value = 17
 )
 
+q2 = st.radio(
+  "What gender were you assigned at birth?",
+  options = ['Female', 'Male']
+)
+
+q3 = st.radio(
+  "Which race or ethnicity best describes you?",
+  options = ['American Indian or Alaskan Native', 'Black or African American', 'Hispanic', 'Asian', 'Native Hawaiian / Other Pacific Islander', 'White / Caucasian', 'Multiple ethnicity / Other']
+)
+
 st.subheader("Education", divider="green")
 
 edu0 = st.radio(
