@@ -27,6 +27,11 @@ q4 = st.number_input(
 
 st.subheader("Education", divider="green")
 
+edu0 = st.radio(
+  "Have you attended any type of school at any time during the past 12 months?",
+  options = yn
+)
+
 edu1 = st.radio(
   "Which of the statements below best describes how you felt overall about going to school during the past 12 months?",
   options = ["You liked going to school a lot", "You kind of liked going to school", "You didn t like going to school very much", "You hated going to school"]
@@ -47,9 +52,43 @@ edu4 = st.radio(
   options = ["Very interesting", "Somewhat interesting", "Somewhat boring", "Very boring"]
 )
 
-q5 = st.radio(
-  "Q5: Have you attended any type of school at any time during the past 12 months?",
-  options = ['Yes', 'No']
+edu5 = st.radio(
+  "During the past 12 months, how often did your teachers at school let you know when you were doing a good job with you school work?",
+  options = frequency
+)
+
+edu6 = st.radio(
+  "What were your grades for the last semester or grading period you completed?",
+  options = frequency
+)
+
+st.subheader("Programs", divider="blue")
+
+prog1 = st.radio(
+  "During the past 12 months have you participated in a problem solving, communication skills or self-esteem group?",
+  options = yn
+)
+
+prog2 = st.radio(
+  "During the past 12 months have you participated in a violence prevention program, where you learn ways to avoid fights and control anger?",
+  options = yn
+)
+
+st.subheader("Life", divider="blue")
+
+life1 = st.radio(
+  "Would you say your health in general is excellent, very good, good, fair, or poor?",
+  options = ['Excellent', 'Very good', 'Good', 'Fair', 'Poor']
+)
+
+life2 = st.radio(
+  "How many times in the past 12 months have you moved? Please include moves from one residence to another within the same city/town as well as those from one city/town to another.",
+  options = ['0', '1', '2', '3 or more']
+)
+
+life3 = st.radio(
+  "How well do you speak English?",
+  options = ['Very well', 'Well', 'Not well', 'Not at all']
 )
 
 st.subheader("Activities", divider="blue")
