@@ -5,6 +5,8 @@ st.set_page_config("Survey Screening", page_icon="📝")
 
 st.title("Screening for Adolescent Depression 📝")
 
+yn = ['Yes', 'No']
+
 q1 = st.number_input(
   "Q1: How old are you?", min_value = 12, max_value = 17
 )
@@ -212,6 +214,77 @@ relig2 = st.radio(
 relig3 = st.radio(
   "It is important that your friends share your religious beliefs.",
   options = disagr
+)
+
+st.subheader("Parental Monitoring", divider="blue")
+
+par1 = st.radio(
+  "During the past 12 months, how often did your parents check on whether you had done your homework?",
+  options = yn
+)
+
+par2 = st.radio(
+  "During the past 12 months, how often did your parents make you do chores around the house?",
+  options = yn
+)
+
+par3 = st.radio(
+  "During the past 12 months, how often did your parents limit the amount of time you watched TV?",
+  options = yn
+)
+
+par4 = st.radio(
+  "During the past 12 months, how often did your parents limit the amount of time you went out with friends on school nights?",
+  options = yn
+)
+
+st.subheader("Parental Interactions", divider="blue")
+
+parint1 = st.radio(
+  "During the past 12 months, how often did your parents let you know when you'd done a good job?",
+  options = yn
+)
+
+parint2 = st.radio(
+  "During the past 12 months, how often did your parents tell you they were proud of you for something you had done?",
+  options = yn
+)
+
+parint3 = st.radio(
+  "During the past 12 months, how many times have you argued or had a fight with at least one of your parents?",
+  options = yn
+)
+
+st.subheader("Experiences", divider="green")
+
+exp1 = st.radio(
+  "During the past 12 months, how many times have you gotten into a serious fight at school or work?",
+  options = yn
+)
+
+exp2 = st.radio(
+  "During the past 12 months, how many times have you taken part in a fight where a group of your friends fought against another group?",
+  options = yn
+)
+
+exp3 = st.radio(
+  "During the past 12 months, how many times have you carried a handgun?",
+  options = yn
+)
+
+exp4 = st.radio(
+  "During the past 12 months, how many times have you sold illegal drugs?",
+  options = yn
+)
+
+exp5 = st.radio(
+  "During the past 12 months, how many times have you stolen or tried to steal anything worth more than $50?",
+  options = yn
+)
+
+exp6 = st.radio(
+  "During the past 12 months, how many times have you attacked someone with the intent to seriously hurt them?",
+  options = yn
 )
 
 st.subheader("Legal History", divider="blue")
