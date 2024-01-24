@@ -217,36 +217,6 @@ hh2 = st.radio(
   options = ["Yes", "No", "I don't know"]
 )
 
-hh3 = st.radio(
-  "During the past 12 months, how often did your parents check on whether you had done your homework?",
-  options = frequency
-)
-
-hh4 = st.radio(
-  "During the past 12 months, how often did your parents make you do chores around the house?",
-  options = frequency
-)
-
-hh5 = st.radio(
-  "During the past 12 months, how often did your parents limit the amount of time you watched TV?",
-  options = frequency
-)
-
-hh6 = st.radio(
-  "During the past 12 months, how often did your parents limit the amount of time you went out with friends on school nights?",
-  options = frequency
-)
-
-hh7 = st.radio(
-  "During the past 12 months, how often did your parents tell you they were proud of you for something you had done?",
-  options = frequency
-)
-
-hh8 = st.radio(
-  "During the past 12 months, how many times have you argued or had a fight with at least one of your parents?",
-  options = frequency
-)
-
 st.subheader("Religion", divider="grey")
 
 disagr = ["Strongly Disagree", "Disagree", "Strongly Agree", "Agree"]
