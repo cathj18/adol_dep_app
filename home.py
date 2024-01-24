@@ -270,71 +270,71 @@ st.subheader("Parental Monitoring", divider="blue")
 
 par1 = st.radio(
   "During the past 12 months, how often did your parents check on whether you had done your homework?",
-  options = yn
+  options = frequency
 )
 
 par2 = st.radio(
   "During the past 12 months, how often did your parents make you do chores around the house?",
-  options = yn
+  options = frequency
 )
 
 par3 = st.radio(
   "During the past 12 months, how often did your parents limit the amount of time you watched TV?",
-  options = yn
+  options = frequency
 )
 
 par4 = st.radio(
   "During the past 12 months, how often did your parents limit the amount of time you went out with friends on school nights?",
-  options = yn
+  options = frequency
 )
 
 st.subheader("Parental Interactions", divider="blue")
 
 parint1 = st.radio(
   "During the past 12 months, how often did your parents let you know when you'd done a good job?",
-  options = yn
+  options = frequency
 )
 
 parint2 = st.radio(
   "During the past 12 months, how often did your parents tell you they were proud of you for something you had done?",
-  options = yn
+  options = frequency
 )
 
 parint3 = st.radio(
   "During the past 12 months, how many times have you argued or had a fight with at least one of your parents?",
-  options = yn
+  options = ['0', '1 or 2', '3-5', '6-9','10 or more']
 )
 
 st.subheader("Experiences", divider="green")
 
 exp1 = st.radio(
   "During the past 12 months, how many times have you gotten into a serious fight at school or work?",
-  options = yn
+  options = ['0', '1 or 2', '3-5', '6-9','10 or more']
 )
 
 exp2 = st.radio(
   "During the past 12 months, how many times have you taken part in a fight where a group of your friends fought against another group?",
-  options = yn
+  options = ['0', '1 or 2', '3-5', '6-9','10 or more']
 )
 
 exp3 = st.radio(
   "During the past 12 months, how many times have you carried a handgun?",
-  options = yn
+  options = ['0', '1 or 2', '3-5', '6-9','10 or more']
 )
 
 exp4 = st.radio(
   "During the past 12 months, how many times have you sold illegal drugs?",
-  options = yn
+  options = ['0', '1 or 2', '3-5', '6-9','10 or more']
 )
 
 exp5 = st.radio(
   "During the past 12 months, how many times have you stolen or tried to steal anything worth more than $50?",
-  options = yn
+  options = ['0', '1 or 2', '3-5', '6-9','10 or more']
 )
 
 exp6 = st.radio(
   "During the past 12 months, how many times have you attacked someone with the intent to seriously hurt them?",
-  options = yn
+  options = ['0', '1 or 2', '3-5', '6-9','10 or more']
 )
 
 st.subheader("Legal History", divider="blue")
