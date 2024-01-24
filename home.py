@@ -6,6 +6,7 @@ st.set_page_config("Survey Screening", page_icon="📝")
 st.title("Screening for Adolescent Depression 📝")
 
 yn = ['Yes', 'No']
+frequency = ["Always", "Sometimes", "Seldom", "Never"]
 
 q1 = st.number_input(
   "Q1: How old are you?", min_value = 12, max_value = 17
@@ -203,8 +204,6 @@ hh2 = st.radio(
   "Do you have a father in your household?",
   options = ["Yes", "No", "I don't know"]
 )
-
-frequency = ["Always", "Sometimes", "Seldom", "Never"]
 
 hh3 = st.radio(
   "During the past 12 months, how often did your parents check on whether you had done your homework?",
