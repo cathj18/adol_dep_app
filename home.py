@@ -8,8 +8,8 @@ st.title("Screening for Adolescent Depression 📝")
 yn = ['Yes', 'No']
 frequency = ["Always", "Sometimes", "Seldom", "Never"]
 
-q1 = st.number_input(
-  "How old are you?", min_value = 12, max_value = 17
+q1 = st.selectbox(
+  "How old are you?", range(12, 18)
 )
 
 q2 = st.radio(
