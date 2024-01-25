@@ -56,7 +56,7 @@ edu5 = st.radio(
 
 edu6 = st.radio(
   "What were your grades for the last semester or grading period you completed?",
-  options = frequency
+  options = ['A+ , A or A- average', 'B+ , B or B- average', 'C+ , C or C- average', 'D or less than a D average', 'My school does not give these grades']
 )
 
 st.subheader("Programs", divider="blue")
